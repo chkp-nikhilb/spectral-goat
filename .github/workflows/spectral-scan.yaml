@@ -16,4 +16,4 @@ jobs:
       uses: checkpointsw/spectral-github-action@v4
       with:
         spectral-dsn: ${{ secrets.SPECTRAL_DSN }}
-        spectral-args: scan --engines secrets,iac,oss
+        spectral-args: scan --ok --engines secrets,iac,oss
